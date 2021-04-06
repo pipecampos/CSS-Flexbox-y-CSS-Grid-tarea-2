@@ -1,0 +1,27 @@
+.grid-container{
+	display : grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(8,1fr);
+	gap:1px;
+
+}
+.grid-container >div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4rem;
+	color: forestgreen;
+	background-color:forestgreen;
+}
+.item1,.item2{
+	grid-column: span 2;
+}
+.item3,.item6{
+	grid-row: span 6;
+}
+.item4,.item5,.item7,.item8{
+	grid-row: span 3;
+}
+.item9,.item10{
+	grid-column: span 2;
+}
